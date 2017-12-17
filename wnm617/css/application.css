@@ -189,26 +189,32 @@ input.mm {
     height: 30px;
     width: 30px;
 }
-    #payment-form label {
-        padding-top: 0px;
-    }
-    #payment-form {
-        padding: 5%;
-        background-color: #47A3DA;
-    }
-    #payment-form .cbp-mc-submit-wrap {
-        padding: 0;
-    }
-    #payment-form .cbp-mc-submit-wrap button {
-        margin-top: 15px;
-        padding: 3%;
-        width: 100%;
-    }
-    #payment-close {
-        height: 28px;
-        width: 28px;
-        font-size: 18px;
-    }
+
+#payment-form label {
+    padding-top: 0px;
+}
+
+#payment-form {
+    padding: 5%;
+    background-color: #47A3DA;
+}
+
+#payment-form .cbp-mc-submit-wrap {
+    padding: 0;
+}
+
+#payment-form .cbp-mc-submit-wrap button {
+    margin-top: 15px;
+    padding: 3%;
+    width: 100%;
+}
+
+#payment-close {
+    height: 28px;
+    width: 28px;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 70em) {
     .cbp-mc-column {
         width: 50%;
@@ -216,7 +222,6 @@ input.mm {
     .cbp-mc-column:nth-child(3) {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 48em) {
@@ -224,5 +229,4 @@ input.mm {
         width: 100%;
         padding: 10px;
     }
-    
 }
