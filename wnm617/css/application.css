@@ -1,5 +1,3 @@
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -21,9 +19,6 @@
 .cbp-mc-form {
     position: relative;
 }
-
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .cbp-mc-form:before,
 .cbp-mc-form:after {
