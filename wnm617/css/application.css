@@ -189,21 +189,6 @@ input.mm {
     height: 30px;
     width: 30px;
 }
-
-@media screen and (max-width: 70em) {
-    .cbp-mc-column {
-        width: 50%;
-    }
-    .cbp-mc-column:nth-child(3) {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 48em) {
-    .cbp-mc-column {
-        width: 100%;
-        padding: 10px;
-    }
     #payment-form label {
         padding-top: 0px;
     }
@@ -224,4 +209,20 @@ input.mm {
         width: 28px;
         font-size: 18px;
     }
+@media screen and (max-width: 70em) {
+    .cbp-mc-column {
+        width: 50%;
+    }
+    .cbp-mc-column:nth-child(3) {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 48em) {
+    .cbp-mc-column {
+        width: 100%;
+        padding: 10px;
+    }
+    
 }
