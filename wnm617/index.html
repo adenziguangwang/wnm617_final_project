@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no IE=edge">
+    <title>Make a selection</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/selection.css">
+    <link rel="stylesheet" href="css/application.css">
+    <!--SCRIPTS-->
+    <script src="https://use.fontawesome.com/f4cc6ac2ae.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110554083-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-110554083-2');
+    </script>
+</head>
+<body>
+    <div class="wholewrap">
+        <div class="intro-wrapper">
+            <div class="container intro d-flex justify-content-center align-items-center">
+                <div class="select-menu-container">
+                    <div class="header">
+                        <h1>FIND YOUR DEGREE</h1>
+                    </div>
+                    <div class="introForm">
+                        I want to pursuit
+                        <select name="degree" id="degree" class="selectMenu">
+      <option>degree</option>
+      <option value = 1>Master's</option>
+      <option value = 2>Bachelor's</option>
+      <option value = 3>Associate's</option>
+
+    </select> in
+                        <select name="major" id="major" class="selectMenu">
+            <option>major</option>
+      <option value = 1>Arts</option>
+      <option value = 2>Business</option>
+      <option value = 3>Science</option>
+    </select> in
+                        <select name="state" id="state" class="selectMenu">
+        <option>state</option>
+      <option value = 1>Arizona</option>
+      <option value = 2>California</option>
+      <option value = 3>Texas</option>
+    </select>.
+
+                        <div class="submit">
+                            <button id="submit" type="submit"><span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>Find your school</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="selection-wrapper">
+            <div class="selection-overlay"></div>
+            <div class="framer">
+                <header class="container-fluid fixed-top selection-header">
+                    <a href="#" class="back-button" id="back-to-intro"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+                </header>
+                <div class="dragzone-wrapper d-flex align-items-center justify-content-center" id="dragzone-wrapper">
+                    <div id="dragzone" class="grid"></div>
+                </div>
+                <div id="slideup-button" class="text-center"><i class="fa fa-3x fa-caret-up animated infinite pulse" aria-hidden="true"></i></div>
+            </div>
+            <div id="dropzone" class="container-fluid d-flex justify-content-left align-items-center"></div>
+        </div>
+        <!--DISPLAY SCHOOL INFO SECTION-->
+        <div id="school-info">
+            <header class="container-fluid fixed-top selection-header">
+                <a href="#" class="back-button" id="school-info-close"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+            </header>
+            <div class="container school-info-content">
+            </div>
+        </div>
+        <!--END OF SCHOOL INFO SECTION-->
+
+        <!--APPPLICATION SECTION-->
+        <div class="application-wrapper">
+            <header class="container-fluid fixed-top application-header">
+                <a href="#" class="back-button" id="back-to-selection"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+            </header>
+            <div class="main">
+                <form class="cbp-mc-form" id="application-form">
+                    <div class="cbp-mc-column">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Jonathan">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Doe">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" placeholder="jon@doe.com">
+                        <label for="schools">School</label>
+                        <select id="schools" name="schools">
+	  						<option>School(s) to apply</option>
+	  						<option>School 1</option>
+	  						<option>School 2</option>
+	  						<option>School 3</option>
+	  					</select>
+                        <label for="bio">Tell us a little bit about yourself.</label>
+                        <textarea id="bio" name="bio" placeholder="So we can help you better."></textarea>
+                    </div>
+                    <div class="cbp-mc-column">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" placeholder="+1(650)333-3232">
+                        <label for="affiliations">What's your interest?</label>
+                        <textarea id="affiliations" name="affiliations" placeholder="Make if fun!"></textarea>
+                        <label>Program</label>
+                        <select id="occupation" name="occupation">
+	  						<option>Program 1</option>
+	  						<option>Program 2</option>
+	  						<option>Program 3</option>
+	  						<option>Program 4</option>
+	  					</select>
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" id="dob" name="dob" placeholder="01/02/1988">
+                        <label for="nationality">Nationality</label>
+                        <input type="text" id="nationality" name="nationality" placeholder="USA">
+                    </div>
+                    <div class="cbp-mc-column">
+                        <label>Highest Education Level</label>
+                        <select id="educationLevel" name="talent">
+	  						<option>Master's Degree</option>
+	  						<option>Bachelor's Degree</option>
+	  						<option>Associate's Degree</option>
+	  						<option>Some Certificates</option>
+	  					</select>
+                        <label for="drink">Hobby</label>
+                        <input type="text" id="drink" name="drink" placeholder="Swimming">
+                        <label for="power">Special power</label>
+                        <input type="text" id="power" name="power" placeholder="Anti-gravity">
+                        <label for="referal">Referal</label>
+                        <input type="referal" id="referal" name="referal" placeholder="Evan Robinson">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" placeholder="Anything else would you like to tell us?"></textarea>
+                    </div>
+                    <div class="cbp-mc-submit-wrap">
+                        <button type="button" class="cbp-mc-submit" id="proceed-button">PROCEED</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="payment-wrapper">
+                <div id="payment-overlay" class="d-flex justify-content-center align-items-center">
+                    <header class="container-fluid fixed-top application-header">
+                        <a href="#" class="back-button" id="back-to-application"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+                    </header>
+                    <form action="" method="POST" id="payment-form" class="cbp-mc-form ">
+
+                        <div class="cbp-mc-submit-wrap service-charge">
+                            <h5>SERVICE CHARGE: $20.00</h5>
+                        </div>
+                        <label>
+                        <span>Name on Card</span>
+                        <input type="text" size="20"  placeholder="Your name" />
+                    </label>
+                        <label>
+                        <span>Card Number</span>
+                        <input type="text" size="20" data-stripe="number" placeholder="4242 4242 4242 4242" />
+                    </label>
+                        <label>
+                            <span>CVC</span>
+                            <input type="text" size="4" data-stripe="cvc" placeholder="123" />
+                        </label>
+                        <label>
+                            <span>Expiration (MM/YYYY)</span><br>
+                            <input class="mm" type="text" size="2" data-stripe="exp-month" placeholder="MM"/>
+                        <span class="mm"> / </span>
+                        <input class="mm" type="text" size="4" data-stripe="exp-year" placeholder="YYYY"/>
+                        </label>
+                        <div class="cbp-mc-submit-wrap">
+                            <button type="submit" class="cbp-mc-submit payment">APPLY</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--END OF APPLICATION SECTION-->
+    </div>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/selection.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+    <!--Cradit Card-->
+    <script type="text/javascript">
+        Stripe.setPublishableKey('pk_test_GfjNfTcSAUkYCCLaTm1D4eZh');
+        var stripeResponseHandler = function(status, response) {
+            var $form = $('#payment-form');
+            if (response.error) {
+                alert(response.error.message);
+                $form.find('button').prop('disabled', false);
+            } else {
+                var token = response.id;
+                alert(token);
+            }
+
+        }
+
+        jQuery(function($) {
+            $('#payment-form').submit(function(e) {
+                var $form = $(this);
+                $form.find('button').prop('disabled', true);
+                Stripe.card.createToken($form, stripeResponseHandler);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1, shrink-to-fit=no IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/auth.css" />
+    <!--SCRIPTS-->
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110554083-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-110554083-2');
+    </script>
+</head>
+<body>
+    <div class="container-fluid d-flex align-items-center auth-wrapper">
+        <section>
+            <p><strong>Hi, Welcome to Schoop!</strong></p>
+            <div class="mockup-content">
+                <p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+                <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+                    <button type="button">Login</button>
+                    <div class="morph-content">
+                        <div>
+                            <div class="content-style-form content-style-form-1">
+                                <span class="icon icon-close">Close the dialog</span>
+                                <h2>Login</h2>
+                                <form>
+                                    <p><label>Email</label><input id="login-form-email" type="email"></p>
+                                    <p><label>Password</label><input id="login-form-password" type="password"></p>
+                                    <p><button type="submit" value="Sign In" onclick="handleSignIn()" id="signIn">Login</button></p>
+                                    <p><button type="submit" id="facebookSignIn" value="Facebook" onclick="handleFBLogin();">Facebook</button></p>
+                                    <p><button type="submit" id="googleSignIn" value="Google" onclick="handleGmailLogin();">Google</button></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- morph-button -->
+                <strong class="joiner">or</strong>
+                <div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+                    <button type="button">Signup</button>
+                    <div class="morph-content">
+                        <div>
+                            <div class="content-style-form content-style-form-2">
+                                <span class="icon icon-close">Close the dialog</span>
+                                <h2>Sign Up</h2>
+                                <form>
+                                    <p><label>Email</label><input id="signup-form-email" type="email" aria-describedby="emailHelp"></p>
+                                    <p><label>Password</label><input id="signup-form-password" type="password" class="password" aria-describedby="passwordHelp"></p>
+                                    <p><label>Confirm Password</label><input type="password" class="confirmPassword" aria-describedby="passwordHelp"></p>
+                                    <p><button type="submit" value="Sign Un" onclick="handleSignUp()" id="signUn">Sign Up</button></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- morph-button -->
+                <p>Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong.</p>
+            </div>
+            <!-- /form-mockup -->
+        </section>
+
+    </div>
+    <!-- AUTH WRAPPER -->
+    <script src="js/classie.js"></script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script src="js/auth-btn.js"></script>
+    <script src="js/auth.js"></script>
+    <!--Firebase JS-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC9XJgBZxjKYrt4p9y_zDFD0koh9_D94Hc",
+            authDomain: "wnm617-final-project.firebaseapp.com",
+            databaseURL: "https://wnm617-final-project.firebaseio.com",
+            projectId: "wnm617-final-project",
+            storageBucket: "wnm617-final-project.appspot.com",
+            messagingSenderId: "106573863524"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+</body>
+
+</html>

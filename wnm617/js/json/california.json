@@ -1,0 +1,16 @@
+
+[
+{"id":"Academy of Art University","img":"aau.png","value":"c1"},
+{"id":"University of California, Berkeley","img":"berkeley.png","value":"c2"},
+{"id":"California Institute of Technology","img":"cit.png","value":"c3"},
+{"id":"California State University, Long Beach","img":"csulb.png","value":"c4"},
+{"id":"California State University, Northridge","img":"csun.png","value":"c5"},
+{"id":"San Diego State University","img":"sdsu.png","value":"c6"},
+{"id":"Stanford University","img":"standford.png","value":"c7"},
+{"id":"University of California, Davis","img":"ucdavis.png","value":"c8"},
+{"id":"University of California, Los Angeles","img":"ucla.png","value":"c9"},
+{"id":"University of California, Riverside","img":"ucr.png","value":"c10"},
+{"id":"University of California, San Francisco","img":"ucsf.png","value":"c11"},
+{"id":"University of Southern California","img":"usc.png","value":"c12"}
+]
+                    

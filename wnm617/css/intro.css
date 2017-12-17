@@ -1,0 +1,246 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wholewrap {
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+.main {
+    width: 100%;
+    padding: 0 2em 3em;
+}
+
+.selection-wrapper,
+#school-info,
+.application-wrapper,
+#payment-form {
+    display: none;
+}
+
+
+/*INTRO CUSTOM CSS*/
+
+.intro-wrapper {
+    color: #ffe8e7;
+    background: #E96D65;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.intro select,
+.intro #submit,
+.intro,
+.intro select option,
+.ui-widget {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.ui-widget {
+    font-weight: 300;
+}
+
+.intro a {
+    color: #888;
+    text-decoration: none;
+}
+
+.intro a:hover,
+.intro a:active {
+    color: #333;
+}
+
+.intro .header {
+    margin-bottom: 1em;
+}
+
+.intro .header h1 {
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.intro {
+    height: 100vh;
+    max-width: 50em;
+    padding: 2em;
+}
+
+
+/*SELECT MENU JQUERY STYLE*/
+
+.intro .select-menu-container {
+    width: 100%;
+    margin: 0.3em auto 0 auto;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active,
+.ui-button:hover,
+.ui-button:focus {
+    border: none;
+    background: transparent;
+    font-weight: 300;
+    color: #B14943;
+    outline: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: none;
+    background: #69B1A9;
+    font-weight: 300;
+    color: #468881;
+}
+
+.ui-widget-content {
+    color: #fff;
+    background-color: #75C2BC;
+    border: 0 !important;
+    border-radius: 0;
+    font-size: 2em;
+}
+
+.ui-button .ui-icon {
+    display: none;
+}
+
+.ui-selectmenu-text {
+    padding-bottom: .3em;
+    margin-right: 0;
+}
+
+.ui-button:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.ui-button:focus {
+    background-color: transparent;
+}
+
+.ui-button {
+    transition: all .3s;
+    background-color: transparent;
+    padding: .3em 0em;
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+}
+
+.ui-menu,
+.ui-menu,
+.ui-corner-bottom,
+.ui-widget,
+.ui-widget-content {
+    padding: 0;
+    width: auto;
+}
+
+.ui-menu .ui-menu-item {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ui-selectmenu-button.ui-button {
+    text-align: center;
+    width: auto;
+}
+
+
+/*END JQUERY UI CSS*/
+
+
+/*SUBMIT BUTTON*/
+
+.intro #submit {
+    text-transform: uppercase;
+    font-size: .5em;
+    line-height: 3;
+    cursor: pointer;
+    background: #76C3BD;
+    color: #fff;
+    padding: 0 1em 0 1em;
+    font-size: 40%;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: 0;
+    margin-left: 40px;
+}
+
+.intro #submit:hover,
+.intro #submit:focus {
+    outline: none;
+    background: #69B1A9;
+}
+
+.intro #submit span {
+    letter-spacing: 0;
+    background: #58A199;
+    width: 40px;
+    left: 32px;
+    position: absolute;
+}
+
+@media screen and (max-width:579px) {
+    #submit {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .ui-widget-content {
+        font-size: 1.5em;
+    }
+    .intro .select-menu-container {
+        font-size: 2.5em;
+    }
+    #submit {
+        font-size: 15px !important;
+    }
+}

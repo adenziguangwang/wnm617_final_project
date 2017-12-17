@@ -1,0 +1,12 @@
+[
+{"id":"Rice University","img":"rice.png","value":"t1"},
+{"id":"University of Texas, Austin","img":"austin.png","value":"t2"},
+{"id":"Southern Methodist University","img":"meth.png","value":"t3"},
+{"id":"Texas A&M University, College Station","img":"am.png","value":"t4"},
+{"id":"Baylor University","img":"baylor.png","value":"t5"},
+{"id":"Texas Christian University","img":"christian.png","value":"t6"},
+{"id":"University of Texas, Dallas","img":"dallas.png","value":"t7"},
+{"id":"Texas Tech University, College Station","img":"tech.png","value":"t8"},
+{"id":"University of Houston","img":"houston.png","value":"t9"},
+{"id":"Dallas Baptist University","img":"baptist.png","value":"t10"}
+]

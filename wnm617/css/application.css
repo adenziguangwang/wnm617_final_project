@@ -1,0 +1,227 @@
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.application-wrapper {
+    background: #47a3da;
+    color: #fff;
+    padding-top: 5vh;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.cbp-mc-form {
+    position: relative;
+}
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.cbp-mc-form:before,
+.cbp-mc-form:after {
+    content: " ";
+    display: table;
+}
+
+.cbp-mc-form:after {
+    clear: both;
+}
+
+.cbp-mc-column {
+    width: 33%;
+    padding: 10px 30px;
+    float: left;
+}
+
+.cbp-mc-form label {
+    display: block;
+    padding: 40px 5px 5px 2px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1.4em;
+    padding: 5px 10px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+    border: 3px solid #fff;
+}
+
+.cbp-mc-form textarea {
+    min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active+input,
+.cbp-mc-form label:active+textarea {
+    outline: none;
+    border: 3px solid #10689a;
+}
+
+.cbp-mc-form select:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #10689a;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #10689a;
+    font-style: italic;
+}
+
+.cbp-mc-submit-wrap {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+
+.cbp-mc-form input.cbp-mc-submit,
+.cbp-mc-form button.cbp-mc-submit {
+    background: #10689a;
+    border: none;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+    background: #1478b1;
+}
+
+.craditcard label {
+    padding-top: 15px;
+}
+
+.apply {
+    margin-top: -25px;
+}
+
+.payment {
+    margin-top: 30px;
+}
+
+input.mm {
+    width: 46%;
+    display: inline-block;
+}
+
+.main {
+    width: 100%;
+    padding: 0 2em 3em;
+}
+
+.service-charge {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.payment-wrapper {
+    position: absolute;
+    color: #fff;
+    display: none;
+    z-index: 60000;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+#payment-form {
+    border-radius: 5px;
+    padding: 5%;
+    display: block;
+    background-color: #47A3DA;
+}
+
+#payment-overlay {
+    height: 100vh;
+    width: 100vw;
+}
+
+#payment-close {
+    transition: all .3s;
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 70em) {
+    .cbp-mc-column {
+        width: 50%;
+    }
+    .cbp-mc-column:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .cbp-mc-column {
+        width: 100%;
+        padding: 10px;
+    }
+    #payment-form label {
+        padding-top: 0px;
+    }
+    #payment-form {
+        padding: 5%;
+        background-color: #47A3DA;
+    }
+    #payment-form .cbp-mc-submit-wrap {
+        padding: 0;
+    }
+    #payment-form .cbp-mc-submit-wrap button {
+        margin-top: 15px;
+        padding: 3%;
+        width: 100%;
+    }
+    #payment-close {
+        height: 28px;
+        width: 28px;
+        font-size: 18px;
+    }
+}
